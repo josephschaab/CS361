@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>
+    </head>
+
+    <body>
+        <button id="go-back" onclick="if(confirm('This action will lose your current game progress. Are you sure you want to go back?')) window.location.href='index.html'">Go Back</button>
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+
+        <h2>You: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+
+        <br>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <p id="results"></p>
+
+        <div id="hit-and-stay-text">
+            <h2>Hit or Stay?</h2>
+            <p>The buttons above indicate your option to either hit or stay
+                at any instance during the game. Selecting the "Hit" button will 
+                deal an additional card to your hand. This option is good when the 
+                sum of your cards is low and you need to get a sum closer to 21
+                to beat the dealer. Be careful however, because if you hit and your
+                sum of cards is greater than 21, then you will automatically lose
+                the hand. Selecting the "Stay" option is good when the sum of your
+                cards is close or equal to 21. If the sum of your cards equals 21, 
+                you should always stay! Be careful selecting the stay option since 
+                you have selected it, you will no longer be able to hit.
+            </p>
+        </div>
+        <button id="new-game" onclick="if(confirm('This action will lose your current game progress. Are you sure you want to start new game?')) location.reload()">New Game</button>
+    </body>
+</html>
+

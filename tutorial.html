@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BlackJack Tutorial</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+                color: #333;
+            }
+            .tutorial-text {
+                width: 80%;
+                max-width: 800px;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="go-back" onclick="if(confirm('Are you sure you want to go back?')) window.location.href='index.html'">Go Back</button>
+        <div class="tutorial-text">
+            <h1>BlackJack Tutorial</h1>
+            <!-- Add your tutorial text here -->
+            <p>The Objective of Blackjack is to 
+                Beat The Dealer. That is the goal of each round of gameplay.
+                How do you beat the dealer? You can beat the dealer by: 
+                1) By drawing a hand value that is higher than the dealer’s hand value.
+                2) By the dealer drawing a hand value that goes over 21.
+                3) By drawing a hand value of 21 on your first two cards, when the dealer does not.
+                How do you lose to the dealer? you lose to the dealer by:  
+                1) Your hand value exceeds 21.
+                2) The dealers hand has a greater value than yours at the end of the round.
+                Here is additional information on the rules of blackjack:
+                Blackjack is played with a conventional deck of 52 playing cards and suits don’t matter.
+                2 through 10 count at face value, i.e. a 2 counts as two, a 9 counts as nine.
+                Face cards (J,Q,K) count as 10.
+                Ace can count as a 1 or an 11 depending on which value helps the hand the most.
+            </p>
+        </div>
+    </body>
+</html>
